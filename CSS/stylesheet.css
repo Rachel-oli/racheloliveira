@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(https://s3.amazonaws.com/tinycards/image/9f38b0e7d1bd8951e8e52605496a8217);
+}
+
+::selection {
+    background-color: khaki;
+    color: black;
+}
+
+header {
+    display: grid; 
+    min-height: 100vh;
+}
+
+.site-title {
+    display: grid;
+    font-family: 'Playfair Display SC', sans-serif;
+    justify-content: center;
+    align-content: center;
+    font-size: 6em;
+    font-weight: lighter;
+}
+
+.menu {
+    display: grid;
+    justify-content: center;
+}
+
+.menu ul {
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: solid #eee 2px;
+    margin: 20px;
+    padding: 10px 40px;
+    background-color: black;
+}
+
+.menu a:hover {
+    color: black;
+    border: solid black 2px;
+    background-color: rgb(253, 221, 237);
+}
+
+.sobre-mim {
+    display: grid;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.884);
+    align-content: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+h2 {
+    font-family: 'Playfair Display SC', sans-serif;
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+@media (min-width: 320px) {
+    .site-title {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    .sobre-mim {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .site-title {
+        font-size: 3.4em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .site-title {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    .sobre-mim {
+        padding: 100px;
+    }
+}
+
+@media (min-width: 1115px) {
+    .sobre-mim {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+}
+
+.title-sobre {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.text-sobre {
+    text-align: justify;
+    text-indent: 5em;
+    margin: .6em;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 275px 275px 275px;
+    grid-template-rows: 300px;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.884);
+    align-content: center;
+    justify-content: center;
+}
+
+.title-portfolio {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.884);
+}
+
+.playlist-img {
+    height: 300px;
+    text-align: center;
+}
+
+figcaption {
+    font-size: .8em;
+}
+
+.academicos {
+    display: grid;
+    grid-template-rows: 140px 140px;
+    align-items: center;
+    text-align: center;
+}
+
+.academicos a {
+    display:block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 24.5px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: solid transparent 2px;
+}
+
+.academicos a:hover {
+    border: solid black 2px;
+    background-color: rgb(253, 221, 237);
+    color: black;
+}
+
+.contato {
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.884);
+    height: 200px;
+}
+
+.title-contato {
+    margin-bottom: 30px;
+}
+
+.text-contato a {
+    color: black;
+}
+
+.text-contato a:hover {
+    text-decoration: none;
+    background-color:rgb(253, 221, 237);
+    padding:5px;
+}
+
+@media (min-width: 320px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 320px;
+        gap: 25px;
+    }
+    .title-portfolio {
+        margin-bottom: 20px;
+    }
+    .contato {
+        margin:10px;
+    }
+}
+
+@media (min-width: 600px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 275px 275px;
+        gap: 25px;
+    }
+    .title-portfolio {
+        margin-bottom: 20px;
+    }
+    .contato {
+        margin-bottom:10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 275px 275px 275px;
+    }
+    .title-portfolio {
+        margin-bottom: unset;
+    }
+    .contato {
+        margin:unset;
+    }
+}
+
+.credits {
+    font-size: .7em;
+    text-align: center;
+    background-color: #eee;
+}
