@@ -67,6 +67,10 @@ header {
     padding-right: 400px;
 }
 
+.sobre-mim p {
+    font-size: 0.9em;
+}
+
 h2 {
     font-family: 'Playfair Display SC', sans-serif;
     font-size: 3em;
